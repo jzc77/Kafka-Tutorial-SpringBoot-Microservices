@@ -16,7 +16,7 @@ import java.util.Map;
 public class KafkaProducerConfig {
 
     // variable that will hold the bootstrap server url defined in application.properties
-    @Value("{spring.kafka.bootstrap-servers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
     // Configuration to pass to a producer factory
